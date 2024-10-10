@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "reactnative-meseum",
-    "slug": "reactnative-meseum",
+    "name": "expo-museum",
+    "slug": "expo-museum",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
