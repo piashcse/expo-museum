@@ -1,11 +1,15 @@
 import { StyleSheet } from 'react-native';
 import { View } from '@/components/Themed';
 import {Button} from "react-native-paper";
+import { useNavigation } from "expo-router"
 
 export default function HomeLayout() {
+    const navigation = useNavigation();
     return (
         <View style={styles.container}>
-            <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}>
+            <Button icon="camera" mode="contained" onPress={() => {
+                navigation.navigate('rtkquery');
+            }}>
                 RTK Query
             </Button>
         </View>
@@ -15,8 +19,7 @@ export default function HomeLayout() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        padding:16
     },
     title: {
         fontSize: 20,
