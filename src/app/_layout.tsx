@@ -17,7 +17,7 @@ export {
 
 export const unstable_settings = {
     // Ensure that reloading on `/modal` keeps a back button present.
-    initialRouteName: 'home',
+    initialRouteName: 'index',
 };
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -54,7 +54,7 @@ function RootLayoutNav() {
         <Provider store={store}>
             <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
                 <Stack>
-                    <Stack.Screen name="home" options={{title:'Expo museum'}}/>
+                    <Stack.Screen name="index" options={{title:'Expo museum'}}/>
                     <Stack.Screen name="rtkquery" options={{headerShown: false}}/>
                     <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
                     <Stack.Screen name="modal" options={{presentation: 'modal'}}/>
