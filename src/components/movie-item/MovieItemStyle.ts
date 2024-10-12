@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'column',
         backgroundColor: 'white'
-    }, flatListContainer: {
+    },
+    flatListContainer: {
         marginHorizontal: 4,
         marginTop: 4
     },

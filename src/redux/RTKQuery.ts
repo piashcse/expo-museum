@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import {MovieItem} from "@/app/types/MovieItem";
-import {MovieResult} from "@/app/types/MovieResult";
-import {AppConfig} from "@/constants/AppConfig";
+import {MovieItem} from "@/src/app/types/MovieItem";
+import {MovieResult} from "@/src/app/types/MovieResult";
+import {AppConfig} from "@/src/constants/AppConfig";
 
 export const nowPlayingMovieApi = createApi({
     reducerPath: 'nowPlayingMovieApi',
