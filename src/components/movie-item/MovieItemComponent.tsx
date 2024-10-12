@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {FlatList, Image, View, TouchableOpacity, ImageBackground} from "react-native";
-import {MovieItem} from "@/src/app/types/MovieItem";
+import {MovieItem} from "@/src/types/MovieItem";
 import {AppConfig} from "@/src/constants/AppConfig";
 import styles from "@/src/components/movie-item/MovieItemStyle";
 interface MovieItemProps {
