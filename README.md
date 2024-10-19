@@ -14,6 +14,10 @@ A playground for experimenting with various Expo features and React Native funct
 
 Feel free to explore, break things, and learn through experimentation!
 
+<p align="center">
+  <img width="40%" height="40%" src="https://github.com/piashcse/expo-museum/blob/master/screenshots/Simulator Screenshot - iPhone 16 Pro.png" />
+</p>
+
 ## Requirements
 
 - [Node.js](https://nodejs.org/) (latest)
