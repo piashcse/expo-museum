@@ -18,6 +18,11 @@ export default function HomeLayout() {
             }}>
                 Tab View
             </Button>
+            <Button style={styles.buttonStyle} mode="contained" onPress={() => {
+                navigation.navigate('filepicker')
+            }}>
+                File Picker
+            </Button>
         </View>
     );
 }
@@ -36,7 +41,7 @@ const styles = StyleSheet.create({
         height: 1,
         width: '80%',
     },
-    buttonStyle:{
+    buttonStyle: {
         marginVertical: 4
     }
 });

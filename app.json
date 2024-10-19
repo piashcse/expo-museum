@@ -32,6 +32,12 @@
         {
           "root": "./src/app"
         }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerEnvironment": "Production"
+        }
       ]
     ],
     "experiments": {

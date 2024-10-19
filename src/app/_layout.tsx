@@ -9,6 +9,7 @@ import 'react-native-reanimated';
 import {useColorScheme} from '@/src/components/useColorScheme';
 import {Provider} from "react-redux";
 import configurationAppStore from "@/src/redux/Store";
+import {PaperProvider} from "react-native-paper";
 
 export {
     // Catch any errors thrown by the Layout component.
@@ -53,12 +54,15 @@ function RootLayoutNav() {
     return (
         <Provider store={store}>
             <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-                <Stack>
-                    <Stack.Screen name="index" options={{title:'Expo museum'}}/>
-                    <Stack.Screen name="rtkquery" options={{headerShown: false}}/>
-                    <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
-                    <Stack.Screen name="modal" options={{presentation: 'modal'}}/>
-                </Stack>
+                <PaperProvider>
+                    <Stack>
+                        <Stack.Screen name="index" options={{title: 'Expo museum'}}/>
+                        <Stack.Screen name="rtkquery" options={{headerShown: false}}/>
+                        <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
+                        <Stack.Screen name="filepicker" options={{title: 'File Picker'}}/>
+                        <Stack.Screen name="modal" options={{presentation: 'modal'}}/>
+                    </Stack>
+                </PaperProvider>
             </ThemeProvider>
         </Provider>
     );
