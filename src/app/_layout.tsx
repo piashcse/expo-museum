@@ -57,9 +57,10 @@ function RootLayoutNav() {
                 <PaperProvider>
                     <Stack>
                         <Stack.Screen name="index" options={{title: 'Expo museum'}}/>
-                        <Stack.Screen name="rtkquery" options={{headerShown: false}}/>
-                        <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
+                        <Stack.Screen name="rtkquery" options={{title: 'RTK Query'}}/>
+                        <Stack.Screen name="(tabs)" options={{title: 'Tab View'}}/>
                         <Stack.Screen name="filepicker" options={{title: 'File Picker'}}/>
+                        <Stack.Screen name="permission" options={{title: 'Permission'}}/>
                         <Stack.Screen name="modal" options={{presentation: 'modal'}}/>
                     </Stack>
                 </PaperProvider>
