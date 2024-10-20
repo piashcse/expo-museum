@@ -23,6 +23,11 @@ export default function HomeLayout() {
             }}>
                 File Picker
             </Button>
+            <Button style={styles.buttonStyle} mode="contained" onPress={() => {
+                navigation.navigate('permission')
+            }}>
+                Permission
+            </Button>
         </View>
     );
 }
