@@ -11,7 +11,7 @@
     "test": "jest --watchAll",
     "lint": "npx eslint .",
     "lintFixAll": "npx eslint '**/*.{js,jsx,ts,tsx}' --fix",
-    "prettierFixAll": "npx prettier --write '**/*.{js,jsx,ts,tsx}'",
+    "prettierFixAll": "npx prettier --write '**/*.{js,jsx,ts,tsx,json,md}'",
     "fix:lintPrettier": "npm run prettierFixAll && npm run lintFixAll"
   },
   "jest": {
