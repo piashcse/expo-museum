@@ -1,6 +1,7 @@
-# Expo museum 🏛️ 
-[![Expo](https://img.shields.io/badge/Expo-51.0.0-blue.svg?logo=expo)](https://expo.dev/) 
-[![React Native](https://img.shields.io/badge/React%20Native-v0.74.5-green.svg)](https://facebook.github.io/react-native/) 
+# Expo museum 🏛️
+
+[![Expo](https://img.shields.io/badge/Expo-51.0.0-blue.svg?logo=expo)](https://expo.dev/)
+[![React Native](https://img.shields.io/badge/React%20Native-v0.74.5-green.svg)](https://facebook.github.io/react-native/)
 ![badge-Android](https://img.shields.io/badge/Platform-Android-brightgreen)
 ![badge-iOS](https://img.shields.io/badge/Platform-iOS-lightgray)
 [![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-2.2.8-764ABC?logo=redux)](https://redux-toolkit.js.org/)
@@ -8,10 +9,11 @@
 <a href="https://github.com/piashcse"><img alt="License" src="https://img.shields.io/static/v1?label=GitHub&message=piashcse&color=C51162"/></a>
 
 A playground for experimenting with various Expo features and React Native functionality. This repository serves as a learning hub to explore and implement concepts like:
--	📂 Document Picker: Seamlessly handle file selection from the device.
--	🔄 RTK Query: Efficient data fetching and caching using Redux Toolkit Query.
--	🎨 UI Components: Create and test custom UI elements with Expo’s capabilities.
--	🚀 Other Experiments: Try out new ideas and libraries for deeper React Native understanding.
+
+- 📂 Document Picker: Seamlessly handle file selection from the device.
+- 🔄 RTK Query: Efficient data fetching and caching using Redux Toolkit Query.
+- 🎨 UI Components: Create and test custom UI elements with Expo’s capabilities.
+- 🚀 Other Experiments: Try out new ideas and libraries for deeper React Native understanding.
 
 Feel free to explore, break things, and learn through experimentation!
 
@@ -26,7 +28,7 @@ Feel free to explore, break things, and learn through experimentation!
 
 ## How to run
 
-- `git clone https://github.com/piashcse/expo-museum.git` 
+- `git clone https://github.com/piashcse/expo-museum.git`
 - `npm install`
 
 Now, you can choose a command to run the project:
@@ -48,6 +50,7 @@ Now, you can choose a command to run the project:
 [![Linkedin](https://img.shields.io/badge/-linkedin-grey?logo=linkedin)](https://www.linkedin.com/in/piashcse/)
 
 # License
+
 ```
 Copyright 2023 piashcse (Mehedi Hassan Piash)
 
