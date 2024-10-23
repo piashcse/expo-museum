@@ -2,7 +2,7 @@
   "name": "expo-museum",
   "main": "expo-router/entry",
   "version": "1.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -12,7 +12,8 @@
     "lint": "npx eslint .",
     "lintFixAll": "npx eslint '**/*.{js,jsx,ts,tsx}' --fix",
     "prettierFixAll": "npx prettier --write '**/*.{js,jsx,ts,tsx,json,md}'",
-    "fix:lintPrettier": "npm run prettierFixAll && npm run lintFixAll"
+    "fix:lintPrettier": "npm run prettierFixAll && npm run lintFixAll",
+    "npm-install": "rm -rf node_modules && npm i --save && watchman watch-del-all "
   },
   "jest": {
     "preset": "jest-expo"
