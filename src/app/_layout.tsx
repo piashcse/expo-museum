@@ -69,6 +69,10 @@ function RootLayoutNav() {
               options={{ title: 'File Picker' }}
             />
             <Stack.Screen name="permission" options={{ title: 'Permission' }} />
+            <Stack.Screen
+              name="bottomsheet"
+              options={{ title: 'Bottom Sheet' }}
+            />
             <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
           </Stack>
         </PaperProvider>

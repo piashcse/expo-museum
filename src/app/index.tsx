@@ -43,6 +43,15 @@ export default function HomeLayout() {
       >
         Permission
       </Button>
+      <Button
+        style={styles.buttonStyle}
+        mode="contained"
+        onPress={() => {
+          navigation.navigate('bottomsheet');
+        }}
+      >
+        Bottom Sheet
+      </Button>
     </View>
   );
 }
