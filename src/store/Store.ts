@@ -1,19 +1,19 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
-import { nowPlayingMovieApi } from '@/src/redux/RTKQuery';
+import { expoMuseumApi } from '@/src/redux/RTKQuery';
 
-const configurationAppStore = () => {
+const configureAppStore = () => {
   const store = configureStore({
     reducer: {
-      [nowPlayingMovieApi.reducerPath]: nowPlayingMovieApi.reducer,
+      [expoMuseumApi.reducerPath]: expoMuseumApi.reducer,
     },
     middleware: (getDefaultMiddleware) =>
       getDefaultMiddleware({
         immutableCheck: false,
-      }).concat([nowPlayingMovieApi.middleware]),
+      }).concat([expoMuseumApi.middleware]),
     devTools: process.env.NODE_ENV === 'development',
   });
   setupListeners(store.dispatch);
   return store;
 };
-export default configurationAppStore;
+export default configureAppStore;

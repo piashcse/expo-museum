@@ -12,7 +12,7 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/src/components/useColorScheme';
 import { Provider } from 'react-redux';
-import configurationAppStore from '@/src/redux/Store';
+import configureAppStore from '@/src/store/Store';
 import { PaperProvider } from 'react-native-paper';
 import SpaceMonoRegular from '../assets/fonts/SpaceMono-Regular.ttf';
 
@@ -55,7 +55,7 @@ export default function RootLayout() {
 
 function RootLayoutNav() {
   const colorScheme = useColorScheme();
-  const store = configurationAppStore();
+  const store = configureAppStore();
   return (
     <Provider store={store}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
