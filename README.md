@@ -12,8 +12,8 @@ A playground for experimenting with various Expo features and React Native funct
 
 - 📂 **Document Picker**: Seamlessly handle file selection from the device.  
 - 🔄 **RTK Query**: Efficient data fetching and caching using Redux Toolkit Query.  
-- 🎨 **UI Components**: Create and test custom UI elements with Expo’s capabilities.  
-- 🔒 **Axios Authenticator and Refresh Token**: Secure API calls with token-based authentication and automated token refreshing.  
+- 🔒 **Axios Authenticator and Refresh Token**: Secure API calls with token-based authentication and automated token refreshing.
+- 🎨 **UI Components**: Create and test custom UI elements with Expo’s capabilities.   
 - 🚀 **Other Experiments**: Try out new ideas and libraries for deeper React Native understanding.  
 
 Feel free to explore, break things, and learn through experimentation!
