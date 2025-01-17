@@ -6,7 +6,7 @@ import { useAppStore } from '@/src/zustand/useAppStore';
 import axiosBaseQuery from '@/src/redux/BaseQuery';
 
 export const expoMuseumApi = createApi({
-  reducerPath: 'nowPlayingMovieApi',
+  reducerPath: 'expoMuseumApi',
   baseQuery: axiosBaseQuery(),
   endpoints: (builder) => ({
     getNowPlayingMovie: builder.query<MovieItem[], number>({
