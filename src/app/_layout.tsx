@@ -1,4 +1,3 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 import {
   DarkTheme,
   DefaultTheme,
@@ -14,7 +13,9 @@ import { useColorScheme } from '@/src/components/useColorScheme';
 import { Provider } from 'react-redux';
 import configureAppStore from '@/src/store/Store';
 import { PaperProvider } from 'react-native-paper';
-import SpaceMonoRegular from '../assets/fonts/SpaceMono-Regular.ttf';
+import * as Font from '@expo-google-fonts/inter';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export {
   // Catch any errors thrown by the Layout component.
@@ -30,15 +31,12 @@ export const unstable_settings = {
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded, error] = useFonts({
-    SpaceMono: SpaceMonoRegular,
-    ...FontAwesome.font,
+  const [loaded] = useFonts({
+    Inter_400Regular: Font.Inter_400Regular,
+    Inter_600SemiBold: Font.Inter_600SemiBold,
+    Inter_500Medium: Font.Inter_500Medium,
+    Inter_700Bold: Font.Inter_700Bold,
   });
-
-  // Expo Router uses Error Boundaries to catch errors in the navigation tree.
-  useEffect(() => {
-    if (error) throw error;
-  }, [error]);
 
   useEffect(() => {
     if (loaded) {
@@ -49,7 +47,6 @@ export default function RootLayout() {
   if (!loaded) {
     return null;
   }
-
   return <RootLayoutNav />;
 }
 
@@ -60,21 +57,34 @@ function RootLayoutNav() {
     <Provider store={store}>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <PaperProvider>
-          <Stack>
-            <Stack.Screen name="index" options={{ title: 'Expo museum' }} />
-            <Stack.Screen name="rtkquery" options={{ title: 'RTK Query' }} />
-            <Stack.Screen name="(tabs)" options={{ title: 'Tab View' }} />
-            <Stack.Screen
-              name="filepicker"
-              options={{ title: 'File Picker' }}
-            />
-            <Stack.Screen name="permission" options={{ title: 'Permission' }} />
-            <Stack.Screen
-              name="bottomsheet"
-              options={{ title: 'Bottom Sheet' }}
-            />
-            <Stack.Screen name="modal" options={{ presentation: 'modal' }} />
-          </Stack>
+          <GestureHandlerRootView>
+            <BottomSheetModalProvider>
+              <Stack>
+                <Stack.Screen name="index" options={{ title: 'Expo museum' }} />
+                <Stack.Screen
+                  name="rtkquery"
+                  options={{ title: 'RTK Query' }}
+                />
+                <Stack.Screen name="(tabs)" options={{ title: 'Tab View' }} />
+                <Stack.Screen
+                  name="filepicker"
+                  options={{ title: 'File Picker' }}
+                />
+                <Stack.Screen
+                  name="permission"
+                  options={{ title: 'Permission' }}
+                />
+                <Stack.Screen
+                  name="bottomsheet"
+                  options={{ title: 'Bottom Sheet' }}
+                />
+                <Stack.Screen
+                  name="modal"
+                  options={{ presentation: 'modal' }}
+                />
+              </Stack>
+            </BottomSheetModalProvider>
+          </GestureHandlerRootView>
         </PaperProvider>
       </ThemeProvider>
     </Provider>
