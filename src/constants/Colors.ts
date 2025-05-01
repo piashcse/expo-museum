@@ -9,6 +9,8 @@ export default {
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorLight,
     suggestionContainerColor: 'rgba(0,0,0,0.3)',
+    white:'white',
+    black_25:'rgba(0, 0, 0, 0.25)'
   },
   dark: {
     text: '#fff',
@@ -17,5 +19,7 @@ export default {
     tabIconDefault: '#ccc',
     tabIconSelected: tintColorDark,
     suggestionContainerColor: 'rgba(0,0,0,0.3)',
+    white:'white',
+    black_25:'rgba(0, 0, 0, 0.25)'
   },
 };
