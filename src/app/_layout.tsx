@@ -75,6 +75,10 @@ function RootLayoutNav() {
                   options={{ title: 'Permission' }}
                 />
                 <Stack.Screen
+                  name="validation"
+                  options={{ title: 'Validation' }}
+                />
+                <Stack.Screen
                   name="bottomsheet"
                   options={{ title: 'Bottom Sheet' }}
                 />

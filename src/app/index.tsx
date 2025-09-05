@@ -52,6 +52,15 @@ export default function HomeLayout() {
       >
         Bottom Sheet
       </Button>
+      <Button
+        style={styles.buttonStyle}
+        mode="contained"
+        onPress={() => {
+          navigation.navigate('validation');
+        }}
+      >
+        Validation
+      </Button>
     </View>
   );
 }
